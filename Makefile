@@ -2,7 +2,7 @@ V=1
 SOURCE_DIR=src
 BUILD_DIR=build
 DEVELOPMENT=0
-# ADDITIONAL_C_FLAGS = -DNDEBUG
+ADDITIONAL_C_FLAGS = -DNDEBUG
 include $(N64_INST)/include/n64.mk
 
 # TODO: use a wildcard here

@@ -12,7 +12,6 @@ static GLfloat environment_color[] = { 0.53, 0.8, 0.92, 1.0 };
 static GLfloat orig_environment_color[] = { 0.53, 0.8, 0.92, 1.0 };
 static GLfloat water_transform[16] = { 0 };
 
-#ifndef NDEBUG
 static float gFPS;
 static float delta_time;
 static unsigned int old_time;
@@ -32,7 +31,6 @@ static void calculate_framerate(void) {
     old_time = newTime;
     gFPS = (30.0f * 1000000.0f) / TIMER_MICROS(newTime - oldTime);
 }
-#endif
 
 static void system_init(surface_t *zbuffer)
 {
@@ -48,7 +46,7 @@ static void system_init(surface_t *zbuffer)
     rdpq_init();
 #ifndef NDEBUG
     rdpq_debug_start();
-    // rdpq_debug_log(true);
+    rdpq_debug_log(true);
 #endif
     gl_init();
     dfs_init(DFS_DEFAULT_LOCATION);
@@ -307,9 +305,9 @@ int main(void)
 
         rdpq_detach_show();
 
-#ifndef NDEBUG
         calculate_framerate();
         debugf("FPS: %f\n", gFPS);
+#ifndef NDEBUG
         rdpq_debug_log(false);
 #endif
     }
