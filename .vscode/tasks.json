@@ -1,0 +1,27 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "libdragon -- make clean",
+      "group": "none"
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "libdragon -- make",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": {
+        "base": "$gcc",
+        "owner": "cpp",
+        "fileLocation": ["relative", "${workspaceFolder}"]
+      }
+    },
+  ]
+}

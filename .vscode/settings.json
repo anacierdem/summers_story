@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "*.inc": "mips",
+        "libdragon.h": "c",
+        "audio.h": "c",
+        "model64.h": "c",
+        "glu.h": "c",
+        "gl_integration.h": "c",
+        "gl.h": "c",
+        "player.h": "c",
+        "terrain.h": "c",
+        "binout.h": "c",
+        "asset.h": "c",
+        "cgltf.h": "c",
+        "story.h": "c",
+        "summer.h": "c",
+        "utils.h": "c",
+        "dialogue.h": "c",
+        "menu.h": "c",
+        "tutorial.h": "c"
+    }
+}

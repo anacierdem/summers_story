@@ -1,0 +1,8 @@
+﻿/.vs/
+/Debug
+/x64
+/build
+*.z64
+/filesystem
+*.blend1
+/tools/mkterrain
