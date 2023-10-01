@@ -40,7 +40,7 @@ static dialogue_t start_dialogue = (dialogue_t){
                 .next= &(dialogue_t){
                     .text= "The North, she remembered. It must be to the North shore.\n"
                             "If only she could align with the North Star like they did with grandpa, \n"
-                            "but it was plain daylight and not star in the sky.",
+                            "but it was plain daylight and no star in the sky.",
                     .next= &(dialogue_t){
                         .text= "The warmth of the summer sun gave her hope."
                     }
